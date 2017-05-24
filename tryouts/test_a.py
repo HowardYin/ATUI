@@ -11,8 +11,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from libs.erp_pages import wait_for_element
 
 
-class TestHaveFun(object):
-    def test_have_fun(self, teacher_management):
+class TestTeacherManagement(object):
+    def test_teacher_management(self, teacher_management):
         driver = teacher_management
         try:
             query_teachername = wait_for_element(driver, '//*[@id="TeacherName"]')

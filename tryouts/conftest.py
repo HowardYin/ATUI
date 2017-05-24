@@ -55,6 +55,7 @@ from libs.erp_pages import wait_for_element
 @pytest.fixture(scope='class')
 def web_browser_firefox(request):
     firefox_browser = webdriver.Firefox()
+    firefox_browser.implicitly_wait(10)
 
     def fin():
         firefox_browser.quit()
